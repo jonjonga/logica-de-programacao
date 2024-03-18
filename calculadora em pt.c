@@ -7,10 +7,10 @@ int main() {
 	int primeiroNumero, segundoNumero;
 	int soma, subtracao, multiplicacao, divisao;
 	
-	printf("Digite o primeiro número:\n ");
+	printf("Digite o primeiro nÃºmero:\n ");
 	scanf("%i",&primeiroNumero);
 	
-	printf("Digite o segundo número:\n ");
+	printf("Digite o segundo nÃºmero:\n ");
 	scanf("%i",&segundoNumero);
 	
 	soma = primeiroNumero + segundoNumero;
@@ -19,10 +19,10 @@ int main() {
 	divisao = primeiroNumero / segundoNumero;
 	
 	printf("soma:%i\n", soma);
-	printf("subtração:%i\n", subtracao);
-	printf("multiplicação:%i\n", multiplicacao);
-	printf("divisão:%i\n", divisao);
+	printf("subtraÃ§Ã£o:%i\n", subtracao);
+	printf("multiplicaÃ§Ã£o:%i\n", multiplicacao);
+	printf("divisÃ£o:%i\n", divisao);
 	
-	
+	system("cls || clear");
 	
 }
