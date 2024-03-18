@@ -28,12 +28,12 @@ int main() {
 	scanf("%f",&quartaNota);
 	
 	media = (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4;
-	
+	system("cls || clear");
 	printf("Nome do aluno:%s\n",nome);
 	printf("\nIdade do aluno:%i\n",idade);
 	printf("\nNota da primeira unidade:%f\n",primeiraNota);
 	printf("\nNota da segunda unidade:%f\n",segundaNota);
 	printf("\nNota da terceira unidade:%f\n",terceiraNota);
 	printf("\nNota da quarta unidade:%f\n",quartaNota);
-	printf("\nMédia:%f\n",media);
+	printf("\nMÃ©dia:%f\n",media);
 }
