@@ -18,7 +18,7 @@ int main() {
 	system("cls||clear");
 	
 	fflush(stdin);
-	
+	sexo = toupper(sexo);
 	switch (sexo) {
 		case 'M':
 		peso = (72.7 * altura) - 58;
