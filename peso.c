@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <ctype.h>
 
 int main() {
 	setlocale(LC_ALL, "");
@@ -21,14 +22,14 @@ int main() {
 	switch (sexo) {
 		case 'M':
 		peso = (72.7 * altura) - 58;
-		printf("=== Seu peso ideal È: %.2f ", peso);
+		printf("=== Seu peso ideal √©: %.2f ", peso);
 		break;
 	case 'F':
 	peso = (62.1 * altura) - 44.7;
-	printf("=== Seu peso ideal È: %.2f ", peso);
+	printf("=== Seu peso ideal √©: %.2f ", peso);
 	break;
 	default:
-		printf("=== OpÁ„o inv·lida ====");
+		printf("=== Op√ß√£o inv√°lida ====");
 	}
 
 }
