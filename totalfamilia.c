@@ -4,34 +4,35 @@
 #include <limits.h>
 int main() {
 	setlocale(LC_ALL, "");
-	
+
 	float salario, maiorSalario = INT_MIN, menorSalario = INT_MAX, mediaSalario = 0;
-	float mediaFilho, numeroDeFilhos;
+	float mediaFilho, numeroDeFilhos, somaSalario, somaFilho; 
 	int totalFamilia;
 	int i;
-	
+
 	do{
-		printf("== Código| \t Descrição ==\n");
-		printf("==      1| \t Adicionar família ==\n");
+		printf("== CÃ³digo| \t DescriÃ§Ã£o ==\n");
+		printf("==      1| \t Adicionar famÃ­lia ==\n");
 		printf("==      2| \t Sair e exibir resultados ==\n");
 		scanf("%d", &totalFamilia);
-		
+
 		switch(totalFamilia){
-			
+
 			case 1:
-				
-				printf("Digite o valor do salário: ");
+
+				printf("Digite o valor do salÃ¡rio: ");
 				scanf("%f", &salario);
-				
+
 				printf("Digite a quantidade de filhos: ");
 				scanf("%f", &numeroDeFilhos);
-				
+
 				i++;
-				
-				mediaSalario += salario;
-				
-				
-				
+
+				somaSalario += salario;
+				somaFilho += numeroDeFilhos;
+
+
+
 				if(salario > maiorSalario){
 					maiorSalario = salario;
 				}
@@ -39,17 +40,26 @@ int main() {
 					menorSalario = salario;
 				}
 				break;
-				
+
 				case 2:
-					printf("Número de famílias que responderam a pesquisa: %i \n", i);
-					printf("Média do salário da população: %.2f \n", mediaSalario / totalFamilia);
-					printf("Média do número de filhos: %f \n", mediaFilho / totalFamilia);
-					printf("Maior salário: %.2f \n", maiorSalario);
-					printf("Menor salário: %.2f \n", menorSalario);
+				break;
+
 					
-					exit(0);
+					
+					
 		}
-	}while(1);
-	
-	
+	}while(totalFamilia != 2);
+				
+				mediaSalario = somaSalario / i;
+				mediaFilho = somaFilho / i;
+				
+				printf("NÃºmero de famÃ­lias que responderam a pesquisa: %i \n", i);
+					printf("MÃ©dia do salÃ¡rio da populaÃ§Ã£o: %.2f \n", mediaSalario );
+					printf("MÃ©dia do nÃºmero de filhos: %.1f \n", mediaFilho );
+					printf("Maior salÃ¡rio: %.2f \n", maiorSalario);
+					printf("Menor salÃ¡rio: %.2f \n", menorSalario);
+				 
+
+return 0;
+
 }
