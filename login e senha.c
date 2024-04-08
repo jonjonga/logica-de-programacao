@@ -8,9 +8,10 @@ int main() {
 	char loginSalvo [500] = "2203206";
 	char login [500];
 	char senha [500];
-
-
-	while(1){
+	int i;
+	
+	
+	for(i = 1; i < 4; i++){
 	
 	
 		printf("Digite seu login: \n");
@@ -20,8 +21,12 @@ int main() {
 	
 		if(strcmp(login, loginSalvo) == 0 && strcmp(senha, senhaSalvo) == 0){
 			printf("\n\nACESSO CONCEDIDO\n\n");
+			break;
+			
 		}else{
+			
 			printf("\n\nACESSO NEGADO\n\n");
+			
 		}
 		
 		
